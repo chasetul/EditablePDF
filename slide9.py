@@ -11,13 +11,16 @@ file_name = 'base.pdf'
 pdf = canvas.Canvas(file_name, pagesize=letter)
 
 # Create labels for the fields
-pdf.drawString(350, 720, "Security Guards:")
-pdf.drawString(350, 680, "Electronic Surveilance:")
-pdf.drawString(350, 640, "Emergency Sound System:")
-pdf.drawString(350, 600, "Emergency Staff:")
-pdf.drawString(350, 560, "Emergency Exits:")
-pdf.drawString(350, 520, "Firearm Policy:")
-pdf.drawString(350, 480, "Emergency Contacts:")
+pdf.drawString(315, 720, "EMERGENCY")
+pdf.drawString(319, 700, "SERVICE")
+
+pdf.drawString(400, 720, "PHONE")
+pdf.drawString(400, 700, "NUMBER")
+
+pdf.drawString(470, 720, "ADDRESS")
+
+pdf.drawString(560, 720, "EST")
+
 
 def myfunc():
     print("\n START")
@@ -94,13 +97,76 @@ pdf.rect( # BOX - title
     fill=0
 )
 
+pdf.rect( # BOX - title categ's main inner box
+    315, # X
+    305, # Y
+    289, # width
+    445, # height
+    fill=0
+)
+
+pdf.rect( # BOX - title categ's hold box
+    315, # X
+    695, # Y - 700 aligns w top of ^
+    289, # width
+    50, # height
+    fill=0
+)
+
+pdf.rect( # BOX - title categ's hold box 2nd row
+    315, # X
+    645, # Y (above_y -= 50)
+    289, # width
+    50, # height
+    fill=0
+)
+
+pdf.rect( # BOX - title categ's hold box 3rd row
+    315, # X
+    595, # Y (above_y -= 50)
+    289, # width
+    50, # height
+    fill=0
+)
+
+pdf.rect( # BOX - title categ's hold box 3rd row
+    315, # X
+    545, # Y (above_y -= 50)
+    289, # width
+    50, # height
+    fill=0
+)
+
+# LINES
+pdf.line( # straight line - left col div
+    380, # x1
+    550, # y1 - low
+    380, # x2
+    700 # y2 - top
+)
+
+pdf.line( # straight line - mid col div
+    460, # x1
+    550, # y1 - low
+    460, # x2
+    700 # y2 - top
+)
+
+pdf.line( # straight line - right col div
+    540, # x1
+    550, # y1 - low
+    540, # x2
+    700 # y2 - top
+)
+
+# RECTS - TEXT BOXS
 pdf.rect(40, 400, 220, 20, fill=0) # PRIMARY PARKING box
 pdf.rect(20, 310, 120, 20, fill=0) # MAIN ENTRANCE box
 pdf.rect(170, 310, 120, 20, fill=0) # REAR ENTRANCE box
 pdf.rect(310, 760, 100, 20, fill=0) # CLIENT LOGO box
 
 # TEXT TITLES:
-pdf.drawString(420, 765, "SECURITY FOOTPRINT")
+pdf.drawString(420, 765, "EMERGENCY SERVICES")
 pdf.drawString(50, 406, "PRIMARY PARKING SURVEILLANCE")
 pdf.drawString(25, 315, "MAIN ENTRANCE")
 pdf.drawString(175, 315, "REAR ENTRANCE")
@@ -146,35 +212,6 @@ fillpdfs.place_text_box(
     font_color=(0,0,0)
 )
 
-
-# ----- Dropdown -------------
-# fillpdfs.place_dropdown(
-#     'DropImg',
-#     ("AR Icon", "Surveillance"),
-#     510, 
-#     160, 
-#     'blank2.pdf', 
-#     'blank3.pdf', 
-#     1, 
-#     width=100, 
-#     height=30, 
-#     font_size=12, 
-#     font_name=None, 
-#     fill_color=(0.8,0.8,0.8), 
-#     font_color=(0,0,0)
-# )
-
-# fillpdfs.place_text(
-#     "ALPHA RECON", 
-#     510, 
-#     180, 
-#     'blank2.pdf', 
-#     'blank3.pdf', 
-#     1, 
-#     font_size=12, 
-#     font_name="helv", 
-#     color=None
-# )
 fillpdfs.place_text_box(
     'FieldName2', 
     'Summary of alarm and other sound systems', 
@@ -267,40 +304,3 @@ def removePrePdfs():
 removePrePdfs()
 final_pdf = 'blank7.pdf'
 print("\n PDF Generated : " + final_pdf)
-
-
-
-
-
-
-
-
-######  FOLLOWING IS NOT VERY FUNCTIONAL - TRIES TO UPLOAD IMG #######
-
-# import tkinter as tk
-# import webbrowser
-
-# # Function to be executed when the button is clicked
-# def on_button_click():
-#     print("Button clicked!")
-#     webbrowser.open('file:///Users/chase/Desktop/AlphaRecon/juptyterbooks/EditablePDF/index.html')
-#     root.destroy()
-
-# # Create the main window
-# root = tk.Tk()
-# root.title("Clickable Button Example")
-
-# # Create a button
-# button = tk.Button(
-#     root, 
-#     text="Click Me", 
-#     command=on_button_click, 
-#     width=40, 
-#     height=20
-# )
-
-# # Add the button to the window
-# button.pack(pady=20)
-
-# # Run the application
-# root.mainloop()
