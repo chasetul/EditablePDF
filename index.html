@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML2PDF Example</title>
+</head>
+<body>
+  <!-- HTML content to be converted -->
+  <div id="content">
+    <h1>Embed a Button in PDF</h1>
+    <p>This is a demonstration of embedding an HTML button in a PDF:</p>
+    <button id="sample-button">Click Me</button>
+  </div>
+
+  <!-- Button to generate the PDF -->
+  <button id="generate-pdf">Generate PDF</button>
+
+  <!-- Include html2pdf.js from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/html2pdf.js/dist/html2pdf.bundle.min.js"></script>
+  <script>
+    // Generate PDF when the button is clicked
+    document.getElementById('generate-pdf').addEventListener('click', () => {
+      const element = document.getElementById('content'); // The content to convert
+
+      // Use html2pdf.js to generate the PDF
+      const options = {
+        margin: 1,                      // Margins in cm
+        filename: 'embedded-button.pdf', // Name of the PDF file
+        image: { type: 'jpeg', quality: 0.98 }, // Image quality
+        html2canvas: { scale: 2 },     // Scaling for better quality
+        jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' } // PDF format
+      };
+
+      html2pdf().set(options).from(element).save();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Image</title>
@@ -12,4 +55,4 @@
         <button type="submit">Upload Image</button>
     </form>
 </body>
-</html>
+</html> -->

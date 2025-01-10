@@ -24,7 +24,7 @@ def myfunc():
     return 'file:///Users/chase/Desktop/AlphaRecon/juptyterbooks/EditablePDF/index.html'
 
 # Button that links to flask server
-# pdf.linkURL('file:///Users/chase/Desktop/AlphaRecon/juptyterbooks/EditablePDF/index.html', (100, 500, 300, 520), relative=0, thickness=1)
+#pdf.linkURL('file://Users/chase/Desktop/AlphaRecon/juptyterbooks/EditablePDF/index.html', (100, 500, 300, 520), relative=0, thickness=1)
 # pdf.rect(100, 500, 200, 20, fill=0)  # Draw the rectangle for the button
 # pdf.drawString(110, 505, "Upload Image")
 
@@ -176,7 +176,7 @@ fillpdfs.place_text_box(
 #     color=None
 # )
 fillpdfs.place_text_box(
-    'FieldName2', 
+    'FieldName3', 
     'Summary of alarm and other sound systems', 
     500, 
     131, 
@@ -192,7 +192,7 @@ fillpdfs.place_text_box(
 )
 
 fillpdfs.place_text_box(
-    'FieldName2', 
+    'FieldName4', 
     'Summary of available emergency and aid response', 
     480, 
     170, 
@@ -208,7 +208,7 @@ fillpdfs.place_text_box(
 )
 
 fillpdfs.place_text_box(
-    'FieldName2', 
+    'FieldName5', 
     'Emergency exit locations', 
     480, 
     210, 
@@ -224,7 +224,7 @@ fillpdfs.place_text_box(
 )
 
 fillpdfs.place_text_box(
-    'FieldName2', 
+    'FieldName6', 
     'Summary of what (if any) firearms are permitted', 
     450, 
     250, 
@@ -240,7 +240,7 @@ fillpdfs.place_text_box(
 )
 
 fillpdfs.place_text_box(
-    'FieldName2', 
+    'FieldName7', 
     'List emergency contacts for venue/location', 
     480, 
     290, 
