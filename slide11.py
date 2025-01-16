@@ -109,6 +109,7 @@ pdf.drawString(
 )
 
 # LINK TRIALs:
+# So far these don't work great
 file_path = '/Users/chase/Desktop'
 pdf.linkURL('https://{file_path}', # 'https://localhost/index.html'
     (200, 
@@ -123,7 +124,6 @@ pdf.linkURL('https://{file_path}', # 'https://localhost/index.html'
 #pdf.cell(100, 50, txt="Open File", link="file:///absolute/path/to/your/file.jpg", border=0, align="C")
 
 #pdf.linkURL(f'https://{file_path}', (200, 500, 300, 600), relative=0)
-
 
 #pdf.drawImage() # May work if image name is grabbed as user input
 
@@ -328,5 +328,5 @@ def removePrePdfs():
     os.remove('blank6.pdf')
 
 #removePrePdfs()
-final_pdf = 'blank11.pdf'
+final_pdf = 'blank3.pdf'
 print("\n PDF Generated : " + final_pdf)
