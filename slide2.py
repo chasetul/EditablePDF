@@ -136,22 +136,22 @@ pdf.drawString(102, 385, "911")
 pdf.drawString(70, 370, "Venue on site Emergency:")
 pdf.drawString(70, 358, "XXX-XXX-XXXX")
 
-pdf.drawString(70, 348, "Local PD Non-Emergency:")
+pdf.drawString(70, 345, "Local PD Non-Emergency:")
 pdf.drawString(70, 335, "XXX-XXX-XXXX")
 
-pdf.drawString(70, 325, "Major PD Non-Emergency:")
+pdf.drawString(70, 320, "Major PD Non-Emergency:")
 pdf.drawString(70, 310, "XXX-XXX-XXXX")
 
-pdf.drawString(70, 300, "Nearest Hospital:")
+pdf.drawString(70, 295, "Nearest Hospital:")
 pdf.drawString(70, 285, "XXX-XXX-XXXX")
 
-pdf.drawString(70, 275, "Local Fire Station:")
+pdf.drawString(70, 270, "Local Fire Station:")
 pdf.drawString(70, 260, "XXX-XXX-XXXX")
 
-pdf.drawString(70, 250, "Local Fire & Rescue:")
+pdf.drawString(70, 245, "Local Fire & Rescue:")
 pdf.drawString(70, 235, "XXX-XXX-XXXX")
 
-pdf.drawString(70, 225, "Human Trafficking Line:")
+pdf.drawString(70, 220, "Human Trafficking Line:")
 pdf.drawString(70, 210, "XXX-XXX-XXXX")
 
 
@@ -346,6 +346,359 @@ fillpdfs.place_text_box( # loc emg
     'blank3.pdf', 
     1, 
     width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName4', 
+    'XXX-XXX-XXXX', 
+    101, 
+    369, 
+    'blank3.pdf', 
+    'blank4.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName5', 
+    'XXX-XXX-XXXX', 
+    70, 
+    424, 
+    'blank4.pdf', 
+    'blank5.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName6', 
+    'XXX-XXX-XXXX', 
+    70, 
+    448, 
+    'blank5.pdf', 
+    'blank6.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName7', 
+    'XXX-XXX-XXXX', 
+    70, 
+    473, 
+    'blank6.pdf', 
+    'blank7.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName8', 
+    'XXX-XXX-XXXX', 
+    70, 
+    498, 
+    'blank7.pdf', 
+    'blank8.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName9', 
+    'XXX-XXX-XXXX', 
+    70, 
+    523, 
+    'blank8.pdf', 
+    'blank9.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName10', 
+    'XXX-XXX-XXXX', 
+    70, 
+    548, 
+    'blank9.pdf', 
+    'blank10.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # loc emg
+    'FieldName11', 
+    'XXX-XXX-XXXX', 
+    70, 
+    573, 
+    'blank10.pdf', 
+    'blank11.pdf', 
+    1, 
+    width=90, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+
+# upper dest info
+fillpdfs.place_text_box( # dest name
+    'FieldName12', 
+    'Destination Name', 
+    16, 
+    180, 
+    'blank11.pdf', 
+    'blank12.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName13', 
+    '1-XXX-XXX-XXXX', 
+    16, 
+    200, 
+    'blank12.pdf', 
+    'blank13.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName14', 
+    'Street Name', 
+    16, 
+    220, 
+    'blank13.pdf', 
+    'blank14.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName15', 
+    'City, Zip Code', 
+    16, 
+    240, 
+    'blank14.pdf', 
+    'blank15.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+
+# turn by turn
+fillpdfs.place_text_box( # dest name
+    'FieldName16', 
+    'Turn by Turn Directions', 
+    16, 
+    20, 
+    'blank15.pdf', 
+    'blank16.pdf', 
+    1, 
+    width=100, 
+    height=130, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+
+# RIGHT SCREEN SIDE
+# travel
+fillpdfs.place_text_box( # dest name
+    'FieldName17', 
+    'Information specific to location', 
+    230, 
+    305, 
+    'blank16.pdf', 
+    'blank17.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName18', 
+    'Information specific to location', 
+    230, 
+    345, 
+    'blank17.pdf', 
+    'blank18.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName19', 
+    'Information specific to location', 
+    230, 
+    385, 
+    'blank18.pdf', 
+    'blank19.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName20', 
+    'Information specific to location', 
+    230, 
+    425, 
+    'blank19.pdf', 
+    'blank20.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName21', 
+    'Information specific to location', 
+    230, 
+    465, 
+    'blank20.pdf', 
+    'blank21.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+# far right
+fillpdfs.place_text_box( # dest name
+    'FieldName22', 
+    'Information specific to location', 
+    430, 
+    305, 
+    'blank21.pdf', 
+    'blank22.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName23', 
+    'Information specific to location', 
+    430, 
+    345, 
+    'blank22.pdf', 
+    'blank23.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName24', 
+    'Information specific to location', 
+    430, 
+    385, 
+    'blank23.pdf', 
+    'blank24.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName25', 
+    'Information specific to location', 
+    430, 
+    425, 
+    'blank24.pdf', 
+    'blank25.pdf', 
+    1, 
+    width=100, 
+    height=15, 
+    font_size=12, 
+    font_name=None, 
+    fill_color=(0.8,0.8,0.8), 
+    font_color=(0,0,0)
+)
+fillpdfs.place_text_box( # dest name
+    'FieldName26', 
+    'Information specific to location', 
+    430, 
+    465, 
+    'blank25.pdf', 
+    'blank26.pdf', 
+    1, 
+    width=100, 
     height=15, 
     font_size=12, 
     font_name=None, 
