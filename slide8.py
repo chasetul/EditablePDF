@@ -77,7 +77,7 @@ fillpdfs.place_text_box( # local police UP-MOST
     65, 
     267, 
     'base.pdf', 
-    'blank.pdf', 
+    'Slide8.pdf', 
     1, 
     width=230, 
     height=100, 

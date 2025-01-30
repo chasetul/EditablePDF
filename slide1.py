@@ -113,7 +113,7 @@ fillpdfs.place_text_box( # summary w threats
     115, 
     13, 
     'blank.pdf', 
-    'blank1.pdf', 
+    'Slide1.pdf', 
     1, 
     width=70, 
     height=20, 

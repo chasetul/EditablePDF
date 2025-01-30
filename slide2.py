@@ -696,7 +696,7 @@ fillpdfs.place_text_box( # dest name
     430, 
     465, 
     'blank25.pdf', 
-    'blank26.pdf', 
+    'Slide2.pdf', 
     1, 
     width=100, 
     height=15, 

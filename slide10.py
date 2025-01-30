@@ -246,7 +246,7 @@ fillpdfs.place_text_box( # 11
     188, 
     237, 
     'blank10.pdf', 
-    'blank11.pdf', 
+    'Slide10.pdf', 
     1, 
     width=100, 
     height=15, 

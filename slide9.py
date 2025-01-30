@@ -375,7 +375,7 @@ fillpdfs.place_text_box( # low row, 4th
     540, 
     200, 
     'blank11.pdf', 
-    'blank12.pdf', 
+    'Slide9.pdf', 
     1, 
     width=60, 
     height=40, 

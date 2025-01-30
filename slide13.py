@@ -187,7 +187,7 @@ fillpdfs.place_text_box( # lower right SIGACTS
     360, # X
     400, # Y
     'blank4.pdf', 
-    'blank5.pdf', 
+    'Slide13.pdf', 
     1, 
     width=210, 
     height=50, 

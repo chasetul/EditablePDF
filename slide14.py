@@ -101,7 +101,7 @@ fillpdfs.place_text_box( # lower summary
     20, 
     400, 
     'base.pdf', 
-    'blank.pdf', 
+    'Slide14.pdf', 
     1, 
     width=310, 
     height=70, 

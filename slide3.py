@@ -403,7 +403,7 @@ fillpdfs.place_text_box( # type
     300, 
     478, 
     'blank14.pdf', 
-    'blank15.pdf', 
+    'Slide3.pdf', 
     1, 
     width=35, 
     height=20, 
