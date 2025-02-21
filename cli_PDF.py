@@ -80,15 +80,18 @@ def slide14():
     pdf.drawString(20, 600, "Map of SIGACTS")
     pdf.drawString(200, 580, "Listed crimes & amount")
     pdf.drawString(20, 420, "SUMMARY: ")
+    pdf.drawString(360, 640, "DATE")
+    pdf.drawString(420, 640, "LOCATION")
+    pdf.drawString(520, 640, "OFFENSE")
     # IMAGES
     image_path2 = "logo copy.png"
     pdf.drawImage(image_path2, 550, 750, width=50, height=30)
     # OUTLINE BOXES
     pdf.rect( # BOX - MAIN
         10, # X
-        310, # Y
+        80, # Y
         590, # width
-        470, # height
+        700, # height
         fill=0
     )
     pdf.rect( # BOX - left Lg upper
@@ -100,9 +103,9 @@ def slide14():
     )
     pdf.rect( # BOX - left low
         15, # X
-        315, # Y
+        215, # Y
         320, # width
-        155, # height 
+        255, # height 
         fill=0
     )
     # RIGHT SIDE BOXES
@@ -130,13 +133,26 @@ def slide14():
         695,
         10
     )
-    newMessage2 = input("Enter the location name: ") # Get SUMMARY text
+    newMessage2 = input("Enter the summary: ") # Get SUMMARY text
     place_wrapped_text( # Place the location text to pdf
         pdf,
         newMessage2,
         20,
         400,
-        60
+        55 # max line width
+    )
+    newImage = input("Enter the image path (SIGACTS Map): ")
+    if os.path.exists(newImage):
+        pdf.drawImage(newImage, 20, 620, width=110, height=140)
+    else:
+        print("No file found with path [", newImage, "]")
+
+    place_wrapped_text( # Place the DATE
+        pdf,
+        "02/10/2025",
+        353,
+        625,
+        20
     )
 
     # EOF
